@@ -1477,7 +1477,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-6c544a30-a204-40c3-88fd-5d9632addfda",
@@ -2038,12 +2038,12 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "OTP doesn't match",
+							"assignmentExpression": "\"OTP doesn't match\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "You have reached the maximun email OTP verification",
+							"assignmentExpression": "\"You have reached the maximun email OTP verification\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -2059,7 +2059,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-c9f0fe66-25b2-4dbb-966c-38b41a66863b",

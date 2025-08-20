@@ -608,7 +608,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "User not registered with this UserName",
+							"assignmentExpression": "\"User not registered with this UserName\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -625,7 +625,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "rrfNode-ea0e8b41-3705-422c-ad30-8fd07df07b7f",
@@ -2060,7 +2061,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-c9f0fe66-25b2-4dbb-966c-38b41a66863b",
@@ -3283,8 +3284,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3497.0416564941406,
-		"y": 43.58991354440161,
+		"x": -1478.0416564941406,
+		"y": 64.58991354440161,
 		"zoom": 0.5
 	}
 }

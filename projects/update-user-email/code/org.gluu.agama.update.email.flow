@@ -53,7 +53,7 @@ Repeat 6 times max
                          // sent Email otp
                          otpCode = Call emailUpdateService sendEmail email lang
                          // Email exists check
-                         When otpCode is ""
+                         When otpCode is null
                               uiFeedback.errorMessage = "User already exists"
                          // The OTP Code has been send to user.
                          Log "@info OTP generated and send to: " email lang
@@ -101,8 +101,8 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_zcexa = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_zcexa
+                                             it_oulrr = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_oulrr
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -114,10 +114,10 @@ Repeat 6 times max
                          uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                          // Email OTP verification loop completed
                          Log "@error You have reached the maximun email OTP verification"
-                         it_gxmwx = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                         Finish it_gxmwx
+                         it_gtrve = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                         Finish it_gtrve
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_ypxhd = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_ypxhd
+it_vxckh = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_vxckh

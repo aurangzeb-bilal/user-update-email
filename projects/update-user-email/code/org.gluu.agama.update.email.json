@@ -61,7 +61,7 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "",
+							"assignmentExpression": "\"\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						},
 						{
@@ -92,7 +92,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "repeatNode-fee7ace4-27d0-42e4-8a14-fb19d5b9fe2d",
@@ -3274,8 +3275,8 @@
 		}
 	],
 	"viewport": {
-		"x": 0,
-		"y": 0,
-		"zoom": 1
+		"x": 374.03579103816446,
+		"y": 119.03933145181327,
+		"zoom": 0.5
 	}
 }

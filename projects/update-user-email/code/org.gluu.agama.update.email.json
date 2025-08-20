@@ -61,7 +61,7 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "",
+							"assignmentExpression": "\"\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						},
 						{
@@ -92,7 +92,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "repeatNode-80478710-c342-4027-9c2a-5ee64c25db63",

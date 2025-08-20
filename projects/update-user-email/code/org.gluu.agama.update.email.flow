@@ -49,6 +49,11 @@ Repeat 6 times max
                          lang = userWithUid.lang
                          uiFeedback.errorMessage = ""
                          Log "@info Send-Email-page-trigger"
+                         existingUserWithEmail = Call emailUpdateService getUserEntityByMail email
+                         // Email already exists?
+                         When emailObj is false
+                              otpCode = "null"
+                              uiFeedback.errorMessage = "Email already exists"
                          // sent Email otp
                          otpCode = Call emailUpdateService sendEmail email lang
                          // The OTP Code has been send to user.
@@ -97,8 +102,8 @@ Repeat 6 times max
                                              //  Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //  Finish the flow successfully
-                                             it_olmgu = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_olmgu
+                                             it_fydjw = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_fydjw
                                         Otherwise
                                              //  User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -110,10 +115,10 @@ Repeat 6 times max
                          uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                          // Email OTP verification loop completed
                          Log "@error You have reached the maximun email OTP verification"
-                         it_ymghu = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
-                         Finish it_ymghu
+                         it_zkhtb = {success:false, error: "ExceededTheNumberOfAttemptsAllowed"}
+                         Finish it_zkhtb
 //  Maximum attempt reached
 Log "@info Maximum attempt reached"
 //  User Registration flow failed
-it_dhrxj = {success:false, error: "User update flow reached max attempts try later"}
-Finish it_dhrxj
+it_mujxa = {success:false, error: "User update flow reached max attempts try later"}
+Finish it_mujxa

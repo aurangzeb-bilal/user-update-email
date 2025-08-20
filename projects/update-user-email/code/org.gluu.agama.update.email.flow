@@ -41,12 +41,12 @@ Repeat 6 times max
                     //  when fields values are not entered
                     When userInput.empty is true
                          //  show error
-                         uiFeedback.errorMessage = User input fields are empty
+                         uiFeedback.errorMessage = "User input fields are empty"
                          inum = userInput.inum
                          email = userInput.mail
                          inum = userWithUid.inum
                          lang = userWithUid.lang
-                         uiFeedback.errorMessage = __________
+                         uiFeedback.errorMessage = ""
                     Otherwise
                          Log "@info Send-Email-page-trigger"
                          When existingUserWithEmail.empty is false
@@ -107,8 +107,8 @@ Repeat 6 times max
                               //   Finish the flow successfully
                               Log "@info Finish the flow successfully"
                               //   Finish the flow successfully
-                              it_yhgrv = {success:true, data: { userId: userName, email: email}}
-                              Finish it_yhgrv
+                              it_gzvmz = {success:true, data: { userId: userName, email: email}}
+                              Finish it_gzvmz
                          Otherwise
                               //   User update failed log
                               Log "@info User update failed. Error : %" E
@@ -120,10 +120,10 @@ Repeat 6 times max
                          uiFeedback.errorMessage = You have reached the maximun email OTP verification
           //  Email OTP verification loop completed
           Log "@error You have reached the maximun email OTP verification"
-          it_xvnff = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
-          Finish it_xvnff
+          it_kectp = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
+          Finish it_kectp
 //   Maximum attempt reached
 Log "@info Maximum attempt reached"
 //   User Registration flow failed
-it_jhqsr = {success:false, error: ""User update flow reached max attempts try later""}
-Finish it_jhqsr
+it_bbsjk = {success:false, error: ""User update flow reached max attempts try later""}
+Finish it_bbsjk

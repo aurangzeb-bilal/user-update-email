@@ -93,7 +93,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "repeatNode-75f3e2a6-702c-4e64-aa77-56f457242cc8",
@@ -243,7 +243,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "logNode-3c326118-2ec4-477f-9262-77aa47f33b00",
@@ -431,7 +432,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "logNode-f6d7246e-f45d-4329-ab20-4d2b6624e554",
@@ -502,7 +504,9 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false,
+			"dragging": false
 		},
 		{
 			"id": "callNode-e17b10df-e406-4819-b5db-0374360bfcd8",
@@ -722,7 +726,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "User input fields are empty",
+							"assignmentExpression": "\"User input fields are empty\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						},
 						{
@@ -747,7 +751,7 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "",
+							"assignmentExpression": "\"\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -764,7 +768,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-c74e05a0-3cd0-4757-a513-36eb1bfa9fff",
@@ -3275,8 +3280,8 @@
 		}
 	],
 	"viewport": {
-		"x": 0,
-		"y": 0,
-		"zoom": 1
+		"x": -1192.0416564941406,
+		"y": -39.41008645559839,
+		"zoom": 0.5
 	}
 }

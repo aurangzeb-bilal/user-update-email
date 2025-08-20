@@ -84,7 +84,7 @@ Repeat 6 times max
                     //  Log code resend
                     Log "@info New OTP code send successfully!" otpCode
                     //  Provide feedback about the error message to user.
-                    uiFeedback.errorMessage = A new OTP code has been send to you on your Email.
+                    uiFeedback.errorMessage = "A new OTP code has been send to you on your Email."
                Otherwise
                     //  Add log entry with collected code in log file.
                     Log "@info Password provided by the user "
@@ -107,8 +107,8 @@ Repeat 6 times max
                               //   Finish the flow successfully
                               Log "@info Finish the flow successfully"
                               //   Finish the flow successfully
-                              it_yfina = {success:true, data: { userId: userName, email: email}}
-                              Finish it_yfina
+                              it_yjria = {success:true, data: { userId: userName, email: email}}
+                              Finish it_yjria
                          Otherwise
                               //   User update failed log
                               Log "@info User update failed. Error : %" E
@@ -120,10 +120,10 @@ Repeat 6 times max
                          uiFeedback.errorMessage = You have reached the maximun email OTP verification
           //  Email OTP verification loop completed
           Log "@error You have reached the maximun email OTP verification"
-          it_xzowm = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
-          Finish it_xzowm
+          it_bpwpn = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
+          Finish it_bpwpn
 //   Maximum attempt reached
 Log "@info Maximum attempt reached"
 //   User Registration flow failed
-it_cdvpx = {success:false, error: ""User update flow reached max attempts try later""}
-Finish it_cdvpx
+it_jnqqv = {success:false, error: ""User update flow reached max attempts try later""}
+Finish it_jnqqv

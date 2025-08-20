@@ -93,7 +93,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "repeatNode-0b53cb13-643e-4672-bd1d-31c30387f997",
@@ -722,7 +722,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "User input fields are empty",
+							"assignmentExpression": "\"User input fields are empty\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						},
 						{
@@ -747,7 +747,7 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "",
+							"assignmentExpression": "\"\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -764,7 +764,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-04d3ee1c-ac82-4f76-9bfa-ded4a3214b08",
@@ -1669,7 +1670,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false
 		},
 		{
 			"id": "callNode-6af5f677-8b10-49cb-ac4b-475fcad11d38",
@@ -3296,8 +3298,8 @@
 		}
 	],
 	"viewport": {
-		"x": 0,
-		"y": 0,
-		"zoom": 1
+		"x": -1480.5416564941406,
+		"y": 22,
+		"zoom": 0.5
 	}
 }

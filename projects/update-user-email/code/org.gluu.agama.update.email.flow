@@ -101,8 +101,8 @@ Repeat 6 times max
                                              //   Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //   Finish the flow successfully
-                                             it_pjowd = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_pjowd
+                                             it_fhcpu = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_fhcpu
                                         Otherwise
                                              //   User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -110,14 +110,14 @@ Repeat 6 times max
                                    Otherwise
                                         Log "@info Invalid OTP, Please Try Again!"
                                         uiFeedback = {}
-                                        uiFeedback.errorMessage = OTP doesn't match
-                                        uiFeedback.errorMessage = You have reached the maximun email OTP verification
+                                        uiFeedback.errorMessage = "OTP doesn't match"
+                                        uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                          //  Email OTP verification loop completed
                          Log "@error You have reached the maximun email OTP verification"
-                         it_xqkzz = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
-                         Finish it_xqkzz
+                         it_bezad = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
+                         Finish it_bezad
 //   Maximum attempt reached
 Log "@info Maximum attempt reached"
 //   User Registration flow failed
-it_tctaq = {success:false, error: ""User update flow reached max attempts try later""}
-Finish it_tctaq
+it_xsglg = {success:false, error: ""User update flow reached max attempts try later""}
+Finish it_xsglg

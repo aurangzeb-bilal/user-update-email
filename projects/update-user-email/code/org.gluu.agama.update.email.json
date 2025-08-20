@@ -1999,7 +1999,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-46c7c784-070d-4a63-9944-7c125b9fb423",
@@ -2140,7 +2140,7 @@
 					"hasComment": false,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "\"ExceededTheNumberOfAttemptsAllowed\"",
+					"returnVariable": "\"ExceededTheNumberOfAttemptsAllowed",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
@@ -2148,7 +2148,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-25d2a986-36d8-408c-bebb-52d4a5ce1db4",
@@ -2207,7 +2208,7 @@
 					"hasComment": true,
 					"comment": "  User Registration flow failed",
 					"flowfilename": "",
-					"returnVariable": "\"User update flow reached max attempts try later\"",
+					"returnVariable": "User update flow reached max attempts try later",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}
@@ -2215,7 +2216,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": false
 		}
 	],
 	"edges": [
@@ -3304,8 +3306,8 @@
 		}
 	],
 	"viewport": {
-		"x": -2163.5416564941406,
-		"y": 13.926544315835883,
+		"x": -371.5416564941406,
+		"y": 28.926544315835883,
 		"zoom": 0.5
 	}
 }

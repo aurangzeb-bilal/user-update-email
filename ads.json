@@ -15,7 +15,6 @@
         ],
         "noDirectLaunch": [],
         "configs": {
-            "org.gluu.agama.update.email": {},
             "": {}
         },
         "name": "update-user-email"

@@ -3,7 +3,7 @@ Flow org.gluu.agama.update.email
      Timeout 500000 seconds
 //   Create  variable for UI feedback
 uiFeedback = {}
-uiFeedback.errorMessage = __________
+uiFeedback.errorMessage = ""
 emailObj = {}
 sendMail = true
 uiInput = {matches: true, resent: false}
@@ -107,8 +107,8 @@ Repeat 6 times max
                               //   Finish the flow successfully
                               Log "@info Finish the flow successfully"
                               //   Finish the flow successfully
-                              it_igntr = {success:true, data: { userId: userName, email: email}}
-                              Finish it_igntr
+                              it_yhgrv = {success:true, data: { userId: userName, email: email}}
+                              Finish it_yhgrv
                          Otherwise
                               //   User update failed log
                               Log "@info User update failed. Error : %" E
@@ -120,10 +120,10 @@ Repeat 6 times max
                          uiFeedback.errorMessage = You have reached the maximun email OTP verification
           //  Email OTP verification loop completed
           Log "@error You have reached the maximun email OTP verification"
-          it_ctker = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
-          Finish it_ctker
+          it_xvnff = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
+          Finish it_xvnff
 //   Maximum attempt reached
 Log "@info Maximum attempt reached"
 //   User Registration flow failed
-it_rttqd = {success:false, error: ""User update flow reached max attempts try later""}
-Finish it_rttqd
+it_jhqsr = {success:false, error: ""User update flow reached max attempts try later""}
+Finish it_jhqsr

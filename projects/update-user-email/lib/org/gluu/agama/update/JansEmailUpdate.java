@@ -295,14 +295,7 @@ public class JansEmailUpdate extends EmailUpdate {
     public String sendEmail(String to, String lang) {
     try {
     
-        // Check if email already exists
-        User existingUser = getUser(MAIL, to);
-        if (existingUser != null) {
-            LogUtils.log("Email already exists, not sending OTP: %", to);
-            return null; // Return null to indicate email exists
-        }
-        
-        
+    
         // Fetch SMTP configuration
         ConfigurationService configService = CdiUtil.bean(ConfigurationService.class);
         SmtpConfiguration smtpConfig = configService.getConfiguration().getSmtpConfiguration();

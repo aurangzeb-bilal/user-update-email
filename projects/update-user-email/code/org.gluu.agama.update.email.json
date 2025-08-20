@@ -2122,7 +2122,7 @@
 					"hasComment": false,
 					"comment": "",
 					"flowfilename": "",
-					"returnVariable": "{\"ExceededTheNumberOfAttemptsAllowed\"}",
+					"returnVariable": "{error:\"ExceededNumberOfAttempts\"}",
 					"finishMode": "withFailure",
 					"nodeIcon": "material-symbols:line-end-square-rounded"
 				}

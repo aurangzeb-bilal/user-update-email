@@ -622,7 +622,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "rrfNode-f76ed902-312f-4a4e-8aa0-7648a892e330",
@@ -911,7 +911,7 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "Email already exists",
+							"assignmentExpression": "\"Email already exists\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						},
 						{
@@ -938,7 +938,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "callNode-376c0178-9e38-41ee-9c8a-77ba47bed9a1",
@@ -3302,8 +3303,8 @@
 		}
 	],
 	"viewport": {
-		"x": -3347,
-		"y": -381,
-		"zoom": 1
+		"x": -1658.5416564941406,
+		"y": 2.9265443158358835,
+		"zoom": 0.5
 	}
 }

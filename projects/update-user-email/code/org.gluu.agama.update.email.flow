@@ -3,7 +3,7 @@ Flow org.gluu.agama.update.email
      Timeout 500000 seconds
 //   Create  variable for UI feedback
 uiFeedback = {}
-uiFeedback.errorMessage = ""
+uiFeedback.errorMessage = __________
 emailObj = {}
 sendMail = true
 uiInput = {matches: true, resent: false}
@@ -34,19 +34,19 @@ Repeat 6 times max
                //  when user with provided username not found
                When userWithUid.empty is true
                     //  show error
-                    uiFeedback.errorMessage = "User not registered with this UserName"
+                    uiFeedback.errorMessage = User not registered with this UserName
                Otherwise
                     //  Display update user page
                     userInput = RRF "updateUserEmail.ftlh" userWithUid
                     //  when fields values are not entered
                     When userInput.empty is true
                          //  show error
-                         uiFeedback.errorMessage = "User input fields are empty"
+                         uiFeedback.errorMessage = User input fields are empty
                          inum = userInput.inum
                          email = userInput.mail
                          inum = userWithUid.inum
                          lang = userWithUid.lang
-                         uiFeedback.errorMessage = ""
+                         uiFeedback.errorMessage = __________
                     Otherwise
                          Log "@info Send-Email-page-trigger"
                          existingUserWithEmail = Call emailUpdateService getUserEntityByMail email
@@ -54,7 +54,7 @@ Repeat 6 times max
                          otpCode = Call emailUpdateService sendEmail email lang
                          //  Email exists check
                          When otpCode is null
-                              uiFeedback.errorMessage = "User already exists"
+                              uiFeedback.errorMessage = User already exists
                          //  The OTP Code has been send to user.
                          Log "@info OTP generated and send to: " email lang
                          EmailOtpValidationResult = false
@@ -74,11 +74,11 @@ Repeat 6 times max
                                    When otpCode is null
                                         Log "@info Fail to resend new code to user. " otpCode
                                         //  Provide feedback about the otp resend error to user.
-                                        uiFeedback.infoMessage = "Error occurs while sending new code to you. Please contact site administrator."
+                                        uiFeedback.infoMessage = Error occurs while sending new code to you. Please contact site administrator.
                                    //  Log code resend
                                    Log "@info New OTP code send successfully!" otpCode
                                    //  Provide feedback about the error message to user.
-                                   uiFeedback.errorMessage = "A new OTP code has been send to you on your Email."
+                                   uiFeedback.errorMessage = A new OTP code has been send to you on your Email.
                               Otherwise
                                    //  Add log entry with collected code in log file.
                                    Log "@info Password provided by the user "
@@ -101,23 +101,23 @@ Repeat 6 times max
                                              //   Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //   Finish the flow successfully
-                                             it_zglhh = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_zglhh
+                                             it_nrcul = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_nrcul
                                         Otherwise
                                              //   User update failed log
                                              Log "@info User update failed. Error : %" E
-                                             uiFeedback.errorMessage = "User update failed"
+                                             uiFeedback.errorMessage = User update failed
                                    Otherwise
                                         Log "@info Invalid OTP, Please Try Again!"
                                         uiFeedback = {}
-                                        uiFeedback.errorMessage = "OTP doesn't match"
-                                        uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
+                                        uiFeedback.errorMessage = OTP doesn't match
+                                        uiFeedback.errorMessage = You have reached the maximun email OTP verification
                          //  Email OTP verification loop completed
                          Log "@error You have reached the maximun email OTP verification"
-                         it_bteyc = {success:false, error: "{error:"ExceededNumberOfAttempts"}"}
-                         Finish it_bteyc
+                         it_pyrjo = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
+                         Finish it_pyrjo
 //   Maximum attempt reached
 Log "@info Maximum attempt reached"
 //   User Registration flow failed
-it_wvujm = {success:false, error: ""User update flow reached max attempts try later""}
-Finish it_wvujm
+it_bcfce = {success:false, error: ""User update flow reached max attempts try later""}
+Finish it_bcfce

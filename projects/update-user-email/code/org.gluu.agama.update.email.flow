@@ -54,7 +54,7 @@ Repeat 6 times max
                               When existingUserWithEmail.inum is inum
                                    //  Email belongs to a different user - don't send OTP
                                    otpCode = null
-                                   uiFeedback.errorMessage = Email already exists
+                                   uiFeedback.errorMessage = "Email already exists"
                                    uiFeedback.email = email
                                    uiFeedback.matches = true
                               Otherwise
@@ -107,8 +107,8 @@ Repeat 6 times max
                               //   Finish the flow successfully
                               Log "@info Finish the flow successfully"
                               //   Finish the flow successfully
-                              it_neasg = {success:true, data: { userId: userName, email: email}}
-                              Finish it_neasg
+                              it_ruagv = {success:true, data: { userId: userName, email: email}}
+                              Finish it_ruagv
                          Otherwise
                               //   User update failed log
                               Log "@info User update failed. Error : %" E
@@ -120,10 +120,10 @@ Repeat 6 times max
                          uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
           //  Email OTP verification loop completed
           Log "@error You have reached the maximun email OTP verification"
-          it_ptstd = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
-          Finish it_ptstd
+          it_idbns = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
+          Finish it_idbns
 //   Maximum attempt reached
 Log "@info Maximum attempt reached"
 //   User Registration flow failed
-it_dmljp = {success:false, error: ""User update flow reached max attempts try later""}
-Finish it_dmljp
+it_vtqyp = {success:false, error: ""User update flow reached max attempts try later""}
+Finish it_vtqyp

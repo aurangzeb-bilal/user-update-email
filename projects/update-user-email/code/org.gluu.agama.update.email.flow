@@ -78,7 +78,7 @@ Repeat 6 times max
                                    //  Log code resend
                                    Log "@info New OTP code send successfully!" otpCode
                                    //  Provide feedback about the error message to user.
-                                   uiFeedback.errorMessage = A new OTP code has been send to you on your Email.
+                                   uiFeedback.errorMessage = "A new OTP code has been send to you on your Email."
                               Otherwise
                                    //  Add log entry with collected code in log file.
                                    Log "@info Password provided by the user "
@@ -101,8 +101,8 @@ Repeat 6 times max
                                              //   Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //   Finish the flow successfully
-                                             it_pqihq = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_pqihq
+                                             it_pjowd = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_pjowd
                                         Otherwise
                                              //   User update failed log
                                              Log "@info User update failed. Error : %" E
@@ -114,10 +114,10 @@ Repeat 6 times max
                                         uiFeedback.errorMessage = You have reached the maximun email OTP verification
                          //  Email OTP verification loop completed
                          Log "@error You have reached the maximun email OTP verification"
-                         it_hzorv = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
-                         Finish it_hzorv
+                         it_xqkzz = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
+                         Finish it_xqkzz
 //   Maximum attempt reached
 Log "@info Maximum attempt reached"
 //   User Registration flow failed
-it_xinmg = {success:false, error: ""User update flow reached max attempts try later""}
-Finish it_xinmg
+it_tctaq = {success:false, error: ""User update flow reached max attempts try later""}
+Finish it_tctaq

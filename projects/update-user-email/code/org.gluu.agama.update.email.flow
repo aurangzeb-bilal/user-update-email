@@ -101,12 +101,12 @@ Repeat 6 times max
                                              //   Finish the flow successfully
                                              Log "@info Finish the flow successfully"
                                              //   Finish the flow successfully
-                                             it_ysemm = {success:true, data: { userId: userName, email: email}}
-                                             Finish it_ysemm
+                                             it_exdzc = {success:true, data: { userId: userName, email: email}}
+                                             Finish it_exdzc
                                         Otherwise
                                              //   User update failed log
                                              Log "@info User update failed. Error : %" E
-                                             uiFeedback.errorMessage = User update failed
+                                             uiFeedback.errorMessage = "User update failed"
                                    Otherwise
                                         Log "@info Invalid OTP, Please Try Again!"
                                         uiFeedback = {}
@@ -114,10 +114,10 @@ Repeat 6 times max
                                         uiFeedback.errorMessage = "You have reached the maximun email OTP verification"
                          //  Email OTP verification loop completed
                          Log "@error You have reached the maximun email OTP verification"
-                         it_kwpsg = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
-                         Finish it_kwpsg
+                         it_dcqzh = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
+                         Finish it_dcqzh
 //   Maximum attempt reached
 Log "@info Maximum attempt reached"
 //   User Registration flow failed
-it_vbdlo = {success:false, error: ""User update flow reached max attempts try later""}
-Finish it_vbdlo
+it_zoujh = {success:false, error: ""User update flow reached max attempts try later""}
+Finish it_zoujh

@@ -722,7 +722,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "User input fields are empty",
+							"assignmentExpression": "\"User input fields are empty\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						},
 						{
@@ -747,7 +747,7 @@
 						},
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "",
+							"assignmentExpression": "\"\"",
 							"assignedVariableName": "uiFeedback.errorMessage"
 						}
 					],
@@ -764,7 +764,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-8b4aacf5-29c8-4969-be0b-56c9ff6e324d",
@@ -3097,8 +3098,8 @@
 		}
 	],
 	"viewport": {
-		"x": 0,
-		"y": 0,
-		"zoom": 1
+		"x": -1498.168708666995,
+		"y": 134.21466671752387,
+		"zoom": 0.535886731268146
 	}
 }

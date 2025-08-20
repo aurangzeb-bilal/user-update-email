@@ -80,7 +80,7 @@ Repeat 6 times max
                     When otpCode is null
                          Log "@info Fail to resend new code to user. " otpCode
                          //  Provide feedback about the otp resend error to user.
-                         uiFeedback.infoMessage = Error occurs while sending new code to you. Please contact site administrator.
+                         uiFeedback.infoMessage = "Error occurs while sending new code to you. Please contact site administrator."
                     //  Log code resend
                     Log "@info New OTP code send successfully!" otpCode
                     //  Provide feedback about the error message to user.
@@ -107,8 +107,8 @@ Repeat 6 times max
                               //   Finish the flow successfully
                               Log "@info Finish the flow successfully"
                               //   Finish the flow successfully
-                              it_gzvmz = {success:true, data: { userId: userName, email: email}}
-                              Finish it_gzvmz
+                              it_yfina = {success:true, data: { userId: userName, email: email}}
+                              Finish it_yfina
                          Otherwise
                               //   User update failed log
                               Log "@info User update failed. Error : %" E
@@ -120,10 +120,10 @@ Repeat 6 times max
                          uiFeedback.errorMessage = You have reached the maximun email OTP verification
           //  Email OTP verification loop completed
           Log "@error You have reached the maximun email OTP verification"
-          it_kectp = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
-          Finish it_kectp
+          it_xzowm = {success:false, error: ""ExceededTheNumberOfAttemptsAllowed""}
+          Finish it_xzowm
 //   Maximum attempt reached
 Log "@info Maximum attempt reached"
 //   User Registration flow failed
-it_bbsjk = {success:false, error: ""User update flow reached max attempts try later""}
-Finish it_bbsjk
+it_cdvpx = {success:false, error: ""User update flow reached max attempts try later""}
+Finish it_cdvpx

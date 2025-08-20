@@ -769,7 +769,7 @@
 				"width": 170,
 				"height": 124
 			},
-			"selected": true
+			"selected": false
 		},
 		{
 			"id": "logNode-c74e05a0-3cd0-4757-a513-36eb1bfa9fff",
@@ -1388,7 +1388,7 @@
 					"assignments": [
 						{
 							"variableTypeCheck": true,
-							"assignmentExpression": "Error occurs while sending new code to you. Please contact site administrator.",
+							"assignmentExpression": "\"Error occurs while sending new code to you. Please contact site administrator.\"",
 							"assignedVariableName": "uiFeedback.infoMessage"
 						}
 					],
@@ -1404,7 +1404,8 @@
 			"measured": {
 				"width": 170,
 				"height": 124
-			}
+			},
+			"selected": true
 		},
 		{
 			"id": "logNode-ce933a0c-3a50-4e05-b0f1-2dfae86ec3b9",
@@ -3280,8 +3281,8 @@
 		}
 	],
 	"viewport": {
-		"x": -1192.0416564941406,
-		"y": -39.41008645559839,
+		"x": -3132.0416564941406,
+		"y": 52.58991354440161,
 		"zoom": 0.5
 	}
 }
